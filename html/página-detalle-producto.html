@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" >
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/pagina-detalle-producto.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #3e0303;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <title>Detalle de producto</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="" alt="Bootstrap" width="30" height="24">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+          </ul>
+          <a class="my-3 mt-3 badge danger-subtle text-wrap" style="width: 6rem;" href="">Iniciar Sesión</a>
+          <a class="my-3 mt-3 badge danger-subtle text-wrap" style="width: 6rem;" href="">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" style=>
+            <img src="../img/260660057DM_10-0059.jpg" class="d-block w-100" alt="Slide 1" class="card-img-top" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Abrigo Magia</h5>
+              <p>El Abrigo Magia cuenta con un diseño que contempla varias funciones y ocasiones de uso</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/260660057DM_10-0066.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Comodidad y estilo</h5>
+              <p>Su morfología es larga y de corte amplio, línea A, lo que hace que se adapte a todas las siluetas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/260660057DM_10-0070.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Calidad</h5>
+              <p>Tiene capucha fija con cordones para regular. Cuenta con bolsillo interno con cierre que permite guardado en forma segur</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Contáctanos</h3>
+          <p>Email: magiaclothes@hotmail.com</p>
+          <p>Teléfono: +389442920</p>
+        </div>
+        <div class="col">
+          <h3>Síguenos</h3>
+          <a href="#" class="bi bi-facebook"></a>
+          <a href="#" class="bi bi-twitter"></a>
+          <a href="#" class="bi bi-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+ ></script>
+<script src="js/index.js"></script>
+</body>
