@@ -1,6 +1,7 @@
 
 /* estilo navbar */
 .navbar {
+    height: 100px;
     background-color: #333;
     overflow: hidden;
   }
@@ -26,8 +27,28 @@
       text-align: left;
     }
   }
-/*agregué estilo css responsive del navbar */
-  
+/*agregué estilo css responsive del navbar */ 
 
-  
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-image: url();
+}
+
+.footer {
+  background-color: hwb(0 1% 76%);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
   
