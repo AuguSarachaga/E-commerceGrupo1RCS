@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body{
+    min-height: 100vh;
+    background: url(/ASUS.jpg) center / cover;
+
+}
+/* Boton */
+
+.contenedor{
+    display: flex;
+    height: 6vh;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    position: relative;
+    margin-top: 2vh;
+    padding: 10px 30px;
+    color: #000000;
+    letter-spacing: 10px;
+}
+
+.abrir{
+    transform: all 1s ease;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.abrir::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left:-10px;
+    top: 0;
+    background-color: #fff;
+    transform: skew(20deg, 0deg);
+    transition: all 0.6s ease;
+}
+
+.abrir::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.abrir:hover::after{
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(180px);
+}
+
+.abrir:hover::before{
+    background-color: #fff;
+    transform: skew(20deg, 0deg) scale(1.1);
+}
+
+
+
+/* Tabla  */
+table, th, td{
+    padding: 2rem;
+}
+
+main.table{
+    width: 90vw;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(5px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem 0 3rem;
+}
+
+.table-body{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.474);
+
+    margin: .8rem auto;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.table-body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table-body::-webkit-scrollbar-thumb{
+    border: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table-body:hover::-webkit-scrollbar-thumb{
+    border-collapse: collapse;
+    visibility: visible;
+}
+
+th{
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #ffffff62;
+}
+
+
+
+
+
+
+/* Ventana plegable */
+.label-input{
+    display: flex;
+    align-items: center; 
+    padding: 1em;
+    width: 20em;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 20em;
+    margin: 2em;
+    margin-top: 0;
+}
+
+dialog::backdrop{
+    background-color: #23242a;
+    opacity: 20%;
+}
+
+#modal{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.guardar{
+    padding: 1em;
+    margin: 2em;
+    border: #23242a 3em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 30%;
+}
+
+
+.cerrar{
+    padding: 1em;
+    margin: 2em;
+    border: #23242a 3em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 30%;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    
+    
+}
+
+/* Menu Plegable */
+
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.select{
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 20em;
+    
+}
+
+
+
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover{
+    background: #323741
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgb(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index:1;
+}
+
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background:#515562 ;
+    opacity: 100%;
+    color: #fff;
+}
+
+.menu:hover{
+    background: #2a2d35;
+}
+
+/* Desde JS */
+.activo{
+    background: #23242a;
+}
+
+.menu-open{
+    display:block;
+    opacity: 1;
+}
