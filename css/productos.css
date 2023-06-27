@@ -29,6 +29,8 @@
   }
 /*agregué estilo css responsive del navbar */
 
-
-  
-  
+body {
+    background-image: url("https://img.freepik.com/premium-photo/abstract-blurred-background-interior-clothing-store-shopping-mall_44943-543.jpg?w=740");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
