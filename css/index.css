@@ -1,14 +1,187 @@
 
-/* estilo navbar */
-
 .navbar {
+    height: 100px;
     background-color: #333;
     overflow: hidden;
+    background: transparent;
   }
   
+  .navbar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: .5px solid hwb(0 51% 33%);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #c21f1f;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+  }
+  .navbar .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938; 
+  }
+  .wrapper {
+    display: flex;
+    position: relative;
+    right: 33%;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+      overflow: hidden; 
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease; 
+  }
+  .wrapper.active-popup{
+    transform: scale(1);
+  }
+  .wrapper.active {
+    height: 520px;
+  }
+   
+  .wrapper .form-box {
+     width: 100%;
+     padding: 40px; 
+  }
+  .wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+ 
+  }
+ .wrapperactive .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+ }
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form-box.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+
+}
+
+  .wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #8f4545;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+.form-box h2 {
+   font-size: 2em;
+   color: #612626;
+   text-align: center;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #612626;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:focus~label {
+  top: -5px;
+}
+
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #612626;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.remember-forgot {
+  font-size: .9em;
+  color: #650b0b;
+  font-weight: 500;
+  margin: -15 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forgot label input {
+  accent-color: #612626;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #612626;
+  text-decoration: none;
+} 
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #753434;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #270303;
+  font-weight: 500;
+}
+.login-register {
+  font-size: .9em;
+  color: #3e0303;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+.login-register p a {
+  color: #3e0303;
+text-decoration: none;
+font-weight: 600;
+}
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
   .navbar a {
+    border-radius: 6px;
     float: left;
-    color: #cd1010;
+    color: #c21f1f;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -27,8 +200,54 @@
       text-align: left;
     }
   }
-/*agregué estilo css responsive del navbar */
+/*agregué estilo css responsive del navbar */ 
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/abstract-blurred-background-interior-clothing-store-shopping-mall_44943-543.jpg?w=740");
+  background-size: cover ;
+  background-position: center;
+  position: relative;
+}
+
+
+main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  background-image: url();
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.footer {
+  background-color: #3e0303;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; 
+  width: 100%;
+}
+.container {
+  width: 75%;
+  max-width: 1000px;
+  min-width: 320px;
   
 
   
-  
+}
+img {
+  width: 100%;
+  border-radius: 15%;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 1.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

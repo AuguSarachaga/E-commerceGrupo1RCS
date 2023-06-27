@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube
+    </title>
+    <link rel="stylesheet" href="/css/admin-style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+            <button class="btn abrir">Abrir</button>
+    </div>
+      
+    
+
+    <dialog id="modal" class=".dialog">
+    
+        <form id="form1">
+    
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected"></span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu" id="ulm1">
+                <li class="default"></li>
+                <li>Buzo</li>
+                <li>Campera</li>
+                <li>Remera</li>
+                <li>Jeans</li>
+                <li>Deportivo</li>
+                <li>Accesorios</li>
+            </ul>
+            </div>
+    
+        <div class="dropdown">
+                <div class="select">
+                    <span class="selected"></span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu" id="m2">
+                    <li class="activo"></li>
+                   <li>Talle S</li>
+                   <li>TalleM</li>
+                   <li>Talle L</li>
+                   <li>Talle XL</li>
+                   <li>Talle XXL</li>
+                </ul>
+                </div>
+    
+        <div>
+                <label class="label-input"> Color de la prenda</label>
+                <input type="text" placeholder="Color de la prenda" class="input" id="i1" name="inp1" >
+                <label class="label-input"> De que tela esta hecha la prenda.</label>
+                <input type="text" placeholder="Descripción de la prenda" class="input" id="i2" name="inp2" >
+                <label class="label-input"> Precio de la prenda</label>
+                <input type="text" placeholder="Precio de la prenda" class="input" id="i3" name="inp3" >
+    
+                <button value="Genera tabla" class="guardar" type="submit" onclick="createTable()">Guardar</button>
+                <button class="cerrar" value="Cerrar Tabla">Cerrar</button>
+        </div>
+        
+        </form>
+    </dialog>
+    <main class="table">
+        <section class="table-body">
+            <div>
+        <table id="table1" >
+            <tr id="t2">
+                <th>Producto</th>
+                <th>Talle</th>
+                <th>Color</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th></th>
+            </tr>
+        </table>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="/js/admin-JS.js"></script>
+</body>
+</html>
