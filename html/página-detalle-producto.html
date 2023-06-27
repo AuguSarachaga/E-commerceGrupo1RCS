@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" >
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/pagina-detalle-producto.css">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-
-    main {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .footer {
-      background-color: #3e0303;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
   <title>Detalle de producto</title>
+  <style>
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 80px;
+}
+
+main {
+  flex: content;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #3e0303;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+  </style>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -72,31 +75,18 @@
         <div class="carousel-item active" data-bs-interval="10000">
           <div class="image-container">
             <img src="../img/260660057DM_10-0059.jpg" class="d-block img-fluid mx-auto carousel-img" alt="Slide 1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Abrigo Magia</h5>
-              <p>El Abrigo Magia cuenta con un diseño que contempla varias funciones y ocasiones de uso</p>
-            </div>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <div class="image-container">
             <img src="../img/260660057DM_10-0066.jpg" class="d-block img-fluid mx-auto carousel-img" alt="Slide 2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Comodidad y estilo</h5>
-              <p>Su morfología es larga y de corte amplio, línea A, lo que hace que se adapte a todas las siluetas</p>
-            </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="image-container">
             <img src="../img/260660057DM_10-0070.jpg" class="d-block img-fluid mx-auto carousel-img" alt="Slide 3">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Calidad</h5>
-              <p>Tiene capucha fija con cordones para regular. Cuenta con bolsillo interno con cierre que permite guardado en forma segura</p>
-            </div>
           </div>
         </div>
-        <div></div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,36 +97,38 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="cart-container">
-      <h2>Carrito </h2>
-      <div class="cart-items">
-        <div class="cart-actions">
-          <label for="size-select">Talla:</label>
-          <select id="size-select">
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-          </select>
-          <label for="quantity-select">Cantidad:</label>
-          <select id="quantity-select">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
+    <div class="container-center">
+      <div class="product-details">
+        <div class="container-center">
+          <p class="text-break">El Abrigo Dagmar cuenta con un diseño que contempla varias funciones y ocasiones de uso. Su morfología es larga y de corte amplio, línea A, lo que hace que se adapte a todas las siluetas. Tiene capucha fija con cordones para regular. Cuenta con bolsillo interno con cierre que permite guardado en forma segura.</p>
+          </div>
+        </div>
       </div>
-      <div class="cart-total">
-        <p>Total: $0</p>
+      <div class="cart-container">
+        <h2>Carrito</h2>
+        <div class="cart-items">
+          <div class="cart-actions">
+            <label for="size-select">Talla:</label>
+            <select id="size-select">
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+            </select>
+            <label for="quantity-select">Cantidad:</label>
+            <select id="quantity-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="cart-total">
+            <p>Precio: $27980</p>
+          </div>
+          <button class="btn btn-primary">Finalizar Compra</button>
+        </div>
       </div>
-      <button class="btn btn-primary">Finalizar Compra</button>
     </div>
-    
   </main>
-  
-  
-  
-  
-  
-
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -156,6 +148,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
   crossorigin="anonymous"
- ></script>
+></script>
 <script src="js/index.js"></script>
 </body>
+</html>

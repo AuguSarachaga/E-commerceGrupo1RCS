@@ -1,3 +1,4 @@
+
 .carousel-item .carousel-img {
   max-width: 100%;
   height: auto;
@@ -17,6 +18,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.carousel {
+  margin-top: 50px;
+}
+
+.carousel-container {
+  position: relative;
 }
 
 .cart-container h2 {
@@ -41,7 +50,37 @@
 
 .btn-primary {
   width: 70%; 
+  background-color: #4a2525;
+  color: #ffffff;
+  border-color: #5d1414;
+  padding: 10px 20px;
+  font-size: 16px;
 }
+
+  .container        {
+  text-align: center;
+  }
+
+  .container-center {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+
+  .product-details { 
+    margin-top: 10px;
+    
+  }
+  
+  .product-description {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  
+  
+
 
 
 
