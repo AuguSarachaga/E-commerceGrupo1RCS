@@ -68,12 +68,12 @@
         <form action="#">
           <div class="input-box">
             
-            <input type="email" required />
+            <input name="emailLogin" id="emailLogin" type="email" required />
             <label> Email </label>
           </div>
           <div class="input-box">
             
-            <input type="password" required />
+            <input name="passLogin" id="passLogin" type="password" required />
             <label> Contrasena</label>
           </div>
           <div class="remember-forgot">
@@ -82,7 +82,7 @@
             </label>
             <a href="">Olvidaste tu Contrasena? </a>
           </div>
-          <button type="submit" class="btn"> Iniciar Sesion</button>
+          <button type="submit" class="btn" onclick="userLogin"> Iniciar Sesion</button>
           <div class="login-register">
             <p>Aun no tienes cuenta?<a href="" class="register-link">Registrate</a>
             </p>
