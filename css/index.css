@@ -60,7 +60,7 @@
     transform: translateX(0);
  
   }
- .wrapperactive .form-box.login{
+ .wrapper.active .form-box.login{
     transition: none;
     transform: translateX(-400px);
  }
@@ -75,7 +75,7 @@
 
 }
 
-  .wrapper .icon-close {
+.wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -91,6 +91,7 @@
     cursor: pointer;
     z-index: 1;
   }
+
 .form-box h2 {
    font-size: 2em;
    color: #612626;
