@@ -9,10 +9,10 @@
 }
 
 .navbar {
-    height: 100px;
-    background-color: #333;
-    overflow: hidden;
-    background: transparent;
+  height: 100px;
+  background-color: #333;
+  overflow: hidden;
+  background: transparent;
   }
   
   .navbar .btnLogin-popup {
@@ -34,24 +34,26 @@
     background: #fff;
     color: #162938; 
   }
+
   .wrapper {
     display: flex;
     position: relative;
-    right: 33%;
-    width: 400px;
+    margin-top: 5%;
+    right: 34%;
+    width: 50rem;
     height: 440px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-      overflow: hidden; 
+    overflow: hidden; 
     transform: scale(0);
-    transition: transform .5s ease, height .2s ease; 
+    transition: transform .5s ease, height .2s ease;  
   }
   .wrapper.active-popup{
     transform: scale(1);
@@ -229,7 +231,6 @@ body {
 main {
   display: flex;
   flex: 1;
-  padding: 20px;
   background-image: url();
   justify-content: center;
   align-items: center;
@@ -251,16 +252,9 @@ main {
   min-width: 320px;
 }
 
-.main{
-  margin-bottom: none;
-}
 
-.main div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: none;
-}
+
+
 
 #img{
   width: 50%;
@@ -270,7 +264,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 1%;
-  margin-left: 16rem;
+  margin-left: 25rem;
   margin-bottom: none;
 }
 
